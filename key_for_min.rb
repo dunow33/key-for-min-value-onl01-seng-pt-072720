@@ -12,8 +12,8 @@ def key_for_min_value(name_hash)
     if counter == 1
       if small != value
         small = value
+        counter += 1
       end
-      counter += 1
     else
       if value < small
         small = value
