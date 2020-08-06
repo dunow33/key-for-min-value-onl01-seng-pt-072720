@@ -8,7 +8,6 @@ def key_for_min_value(name_hash)
     if value < small
       small = value
       puts value
-      return key
     end
   end
   
