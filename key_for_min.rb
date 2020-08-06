@@ -6,18 +6,18 @@ def key_for_min_value(name_hash)
     return nil
   end
   
-  small = 0
+  min = 0
   correct_key = ""
   counter = 1
   name_hash.each do | key, value |
     if counter == 1
-      if small != value
-        small = value
+      if min != value
+        min = value
         counter += 1
       end
     else
-      if value < small
-        small = value
+      if value < min
+        min = value
         correct_key = key
       end
     end
@@ -26,6 +26,6 @@ def key_for_min_value(name_hash)
   correct_key
 end
 
-#hash = {:blake => 500, :ashley => 2, :adam => 1}
+hash = {:blake => 500, :ashley => 2, :adam => 1}
 
-#puts key_for_min_value(hash)
+puts key_for_min_value(hash)
