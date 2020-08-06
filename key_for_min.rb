@@ -5,6 +5,7 @@ def key_for_min_value(name_hash)
   small = 0
   
   name_hash.each do | key, value |
+    if value 
     if value < small
       small = value
       puts value
