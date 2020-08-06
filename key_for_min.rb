@@ -26,6 +26,6 @@ def key_for_min_value(name_hash)
   correct_key
 end
 
-hash = {:blake => 500, :ashley => 2, :adam => 1}
+hash = {:blake => 10, :ashley => 50, :adam => 17}
 
 puts key_for_min_value(hash)
