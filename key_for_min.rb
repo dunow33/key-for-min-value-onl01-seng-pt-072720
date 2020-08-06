@@ -14,6 +14,7 @@ def key_for_min_value(name_hash)
       if min != value
         min = value
         counter += 1
+        correct_key = key
       end
     else
       if value < min
