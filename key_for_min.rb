@@ -8,20 +8,20 @@ def key_for_min_value(name_hash)
   
   min = 0
   correct_key = ""
-  #counter = 1
+  counter = 1
   name_hash.each do | key, value |
-    #if counter == 1
-      #if min != value
+    if counter == 1
+      if min != value
         min = value
-        #counter += 1
+        counter += 1
         correct_key = key
-      #end
-    #else
+      end
+    else
       if value < min
         min = value
         correct_key = key
       end
-    #end
+    end
   end
   
   correct_key
