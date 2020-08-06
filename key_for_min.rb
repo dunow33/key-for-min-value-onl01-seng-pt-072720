@@ -10,12 +10,12 @@ def key_for_min_value(name_hash)
       if small != value
         small = value
       end
+    else
+      if value < small
+        small = value
+        puts value
+      end
     end
-    if value < small
-      small = value
-      puts value
-    end
-  end
   
   return nil
 end
